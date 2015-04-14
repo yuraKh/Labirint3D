@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MoveYourBody.cs">
     <Files>
-      <File FileName="Assets/MoveYourBody.cs" Line="26" Column="1" />
-      <File FileName="../Camera/Assets/Scripts/Camera1.cs" Line="1" Column="1" />
+      <File FileName="Assets/MoveYourBody.cs" Line="35" Column="21" />
+      <File FileName="../anim/Assets/Control.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

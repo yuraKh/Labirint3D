@@ -4,7 +4,7 @@ using System.Collections;
 public class MoveYourBody : MonoBehaviour {
 	public Animation zombie;
 	Vector3 startM;
-
+	public GameObject boom;
 	RaycastHit hit;
 	// Use this for initialization
 	void Start () {
@@ -16,8 +16,8 @@ public class MoveYourBody : MonoBehaviour {
 
 	void OnTriggerEnter(Collider Col) {
 		if (Col.tag == "Generator") {
+			GameObject Flame = (GameObject)Instantiate (boom, Col.transform.position, new Quaternion (0,0,0,0));
 			Destroy(Col.gameObject);
-
 		}
     }
     
