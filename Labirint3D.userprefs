@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MoveYourBody.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Sci_Fi_Ship_1/Scripts/yeild.js">
     <Files>
-      <File FileName="Assets/MoveYourBody.cs" Line="35" Column="21" />
+      <File FileName="Assets/MoveYourBody.cs" Line="45" Column="1" />
       <File FileName="../anim/Assets/Control.cs" Line="1" Column="1" />
+      <File FileName="Assets/PartCol.cs" Line="1" Column="1" />
+      <File FileName="Assets/Sci_Fi_Ship_1/Scripts/yeild.js" Line="9" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
