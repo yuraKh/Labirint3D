@@ -46,9 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AnemyControl.cs" />
      <Compile Include="Assets\MoveYourBody.cs" />
      <Compile Include="Assets\PartCol.cs" />
      <Compile Include="Assets\SPACESHIP.cs" />
+     <Compile Include="Assets\ZombieReturn.cs" />
      <Compile Include="Assets\eretet.cs" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />

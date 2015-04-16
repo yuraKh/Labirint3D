@@ -7,7 +7,7 @@ public class MoveYourBody : MonoBehaviour
 {
 	public Text Score;
 	public Animation zombie;
-	Vector3 startM;
+
 	public GameObject boom;
 	RaycastHit hit;
 	int _Score = 0;
@@ -17,7 +17,7 @@ public class MoveYourBody : MonoBehaviour
 	{
 
 		zombie = GetComponent<Animation> ();
-		startM = transform.position;
+
 		//dist = Camera.main.transform.position - transform.position;
 	}
 
