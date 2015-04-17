@@ -3,26 +3,41 @@ using System.Collections;
 
 public class ZombieReturn : MonoBehaviour
 {
-	public GameObject cube;
-	// Use this for initialization
+	bool GamIsTacken = false;
+
+
 	void Start ()
 	{
-	
+
 	}
 	void OnTriggerEnter (Collider other)
 	{
 		if (other.tag == "cube") {
 			print ("yes");
-			//other.GetComponent<NavMeshAgent> ().SetDestination (GameObject.Find ("Sphere").transform.position);
+			//Gem.transform.SetParent (transform);
+			//GetComponent<AnemyControl> ().FindClosestGem ().transform.SetParent (transform);
+			other.gameObject.transform.SetParent (transform);
 			GetComponent<NavMeshAgent> ().SetDestination (GameObject.Find ("Sphere").transform.position);
-			Destroy (other.gameObject);
+			GamIsTacken = true;
+		}
+		if ((other.name == "Sphere") && (GamIsTacken)) {
+			print ("no");
+			Destroy (gameObject);
 		}
 	}
-	// Update is called once per frame
+
+
 	void Update ()
 	{
 		if (Input.GetMouseButtonDown (1)) {
-			GameObject Cube = (GameObject)Instantiate (cube, transform.position, Quaternion.identity);
+			if (GamIsTacken) {
+				for (int i = 0; i < transform.childCount; i++) {
+					if (transform.GetChild (i).tag == "cube") {
+						transform.GetChild (i).position = new Vector3 (transform.GetChild (i).position.x, 0.5f, transform.GetChild (i).position.z);
+						transform.GetChild (i).transform.parent = null;
+					}
+				}
+			} 
 			Destroy (gameObject);
 		}
 	}

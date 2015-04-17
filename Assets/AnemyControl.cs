@@ -8,11 +8,11 @@ public class AnemyControl : MonoBehaviour
 	float[] distan;
 	GameObject[] dist;
 
-	GameObject FindClosestEnemy ()
+	public GameObject FindClosestGem () // Пошук найближчого
 	{ 
 		GameObject[] gos;
 		gos = GameObject.FindGameObjectsWithTag ("cube");
-		GameObject closest;
+		GameObject closest = null;
 		float distance = Mathf.Infinity;
 		Vector3 position = transform.position;
 		foreach (GameObject go in gos) {
@@ -29,14 +29,15 @@ public class AnemyControl : MonoBehaviour
 
 	void Start ()
 	{
-		print (FindClosestEnemy ().name);
+
 	}
 
 	void Update ()
 	{
-		/*if (Input.GetMouseButtonDown (0)) {
+		if (Input.GetMouseButtonDown (0)) {
+			print (FindClosestGem ().name);
 			ArmyOfDead = (GameObject)Instantiate (zombak, transform.position, Quaternion.identity);
-			ArmyOfDead.GetComponent<NavMeshAgent> ().SetDestination (FindClosestEnemy ().transform.position);
-		}*/
+			ArmyOfDead.GetComponent<NavMeshAgent> ().SetDestination (FindClosestGem ().transform.position);
+		}
 	}
 }
